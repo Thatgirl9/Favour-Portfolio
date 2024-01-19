@@ -1,19 +1,29 @@
 import "./home.css";
 const Hero = () => {
+  const toggleNav = () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.querySelector(".links");
+    menuBtn.addEventListener("click", () => {
+      console.log("Hi");
+      navLinks.classList.toggle("show-links");
+      menuBtn.classList.toggle("open");
+    });
+  };
+
   return (
     <section>
       <header className="bg-surfaceBackground w-full md:px-12 px-4 py-4">
         {/* second header */}
         <nav className="lg:flex lg:justify-between lg:items-center">
           {/* Logo Hamburger */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-end justify-between">
             <h2 className="font-textTypo text-textPrimary text-2xl">Favour</h2>
 
             {/* Navbar */}
             <button
               id="menu-btn"
               className="block hamburger focus:outline-none lg:hidden"
-              // @click="toggleNav()"
+              onClick={toggleNav}
             >
               <span className="hamburger-top"></span>
               <span className="hamburger-middle"></span>
