@@ -1,7 +1,9 @@
+import HomeComponent from "./components/Home/HomeComponent";
+
 const Portfolio = () => {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <HomeComponent />
     </div>
   );
 };
