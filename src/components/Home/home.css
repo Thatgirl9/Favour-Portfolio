@@ -2,57 +2,13 @@ header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
-/* nav toggle */
-.show-links {
-  height: 50vh;
-  width: 50%;
-  overflow: auto;
-}
-
-/* Hamburger */
-.hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.3s ease-in-out;
-  position: relative;
-}
-
-.hamburger-top,
-.hamburger-middle,
-.hamburger-bottom {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 24px;
-  height: 2px;
-  background: white;
-  transform: rotate(0);
-  transition: all 0.5s;
-}
-
-.hamburger-middle {
-  transform: translateY(7px);
-}
-
-.hamburger-bottom {
-  transform: translateY(14px);
-}
-
-.open {
-  transform: rotate(90deg);
-  transform: translateX(0px);
-}
-
-.open .hamburger-top {
-  transform: rotate(45deg) translateY(-6px) translate(6px);
-}
-
-.open .hamburger-middle {
-  opacity: 0;
-}
-
-.open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(6px);
+.gradient {
+  /* background: var(
+    --brand-gradient-horizontal,
+    linear-gradient(90deg, #9955e8 0%, #7bffaf 100%)
+  /* ); */
+  /* background: linear-gradient(90deg, #9955e8 50%, #7bffaf 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }

@@ -10,7 +10,9 @@ export default {
         // Brand Colors
         primaryBrand500: '#8A42DB',
         primaryBrand400: '#8A42DB',
+        gradientPurple: '#9955E8',
         secondaryBrand: '#7DFFAF',
+        gradientGreen: "#7BFFAF",
 
         // Surface Colors
         surfaceBackground: '#171023',
