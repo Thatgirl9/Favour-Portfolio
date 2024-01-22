@@ -1,23 +1,32 @@
 import { useState } from "react";
 import "./Home/home.css";
+// import PropTypes from "prop-types";
 
 const NavBar = () => {
+  // NavBar.propTypes = {
+  //   setOpen: PropTypes.func.isRequired,
+  //   open: PropTypes.bool.isRequired,
+  // };
+
   let Links = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" },
+    { name: "Blog", link: "https://thatgirl.hashnode.dev/" },
   ];
 
   let [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-surfaceBackground w-full md:px-12 px-4 py-4">
+    <header className="bg-surfaceBackground w-full md:px-14 px-6 py-4">
       {/* second header */}
       <nav className="lg:flex lg:justify-between lg:items-center">
         {/* Logo Hamburger */}
         <div className="flex items-center justify-between">
-          <h2 className="font-textTypo text-textPrimary text-2xl">Favour</h2>
+          <h2 className="font-textTypo text-textPrimary text-2xl">
+            Favour<span className="font-semibold">Ukonu</span>
+          </h2>
 
           {/* Hamburger */}
           <button
@@ -32,18 +41,18 @@ const NavBar = () => {
         </div>
 
         {/* Links */}
-        <div className="flex ">
+        <div className=" block">
           {/* <div
             className={`${
               open
-                ? "blur-sm h-screen md:w[50%] w-[60%] lg:hidden block"
+                ? "fixed top-[3.8em] left-0 z-20 h-screen md:w[50%] w-[60%] lg:hidden block bg-transparent blur-2xl"
                 : "blur-none h-0"
-            }  absolute top-[3.8em] left-0 lg:relative lg:top-0 lg:left-0 lg:h-auto border-2 w-1/2 h-screen z-30`}
+            }  fixed top-[3.8em] left-0 lg:relative lg:top-0 lg:left-0 lg:h-screen w-1/2 h-screen z-30 bg-blend-overlay block lg:hidden `}
           >
             {" "}
           </div> */}
           <div
-            className={`links h-0 overflow-hidden transition-all lg:h-auto bg-surfacePrimary lg:bg-transparent absolute top-[3.8em] right-0 lg:relative lg:top-0 lg:right-0 lg:border-none  lg:rounded-none duration-150 ease-in-out
+            className={`links h-0 overflow-hidden transition-all lg:h-auto bg-surfacePrimary lg:bg-transparent absolute top-[3.8em] right-0 lg:relative lg:top-0 lg:right-0 lg:border-none  lg:rounded-none duration-150 ease-in-out z-50
           ${open ? "h-[100vh] md:w-[50%] w-[60%] overflow-auto" : "h-0 "}`}
           >
             <ul className="flex lg:flex-row lg:gap-6 text-textSecondary font-sectionTypo font-normal gap-[1.7em] justify-end lg:justify-normal lg:items-center items-end flex-col  px-5 py-8 mx-1 lg:mx-0 lg:p-0 border-b-2 border-t-0 border-surfaceSecondary lg:border-none">
