@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Home/home.css";
+import { Link } from "react-router-dom";
 // import PropTypes from "prop-types";
 
 const NavBar = () => {
@@ -58,12 +59,14 @@ const NavBar = () => {
             <ul className="flex lg:flex-row lg:gap-6 text-textSecondary font-sectionTypo font-normal gap-[1.7em] justify-end lg:justify-normal lg:items-center items-end flex-col  px-5 py-8 mx-1 lg:mx-0 lg:p-0 border-b-2 border-t-0 border-surfaceSecondary lg:border-none">
               {Links.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.link}
+                  <Link
+                    to={link.link}
+                    // target="_blank"
+                    // rel="noreferrer"
                     className="hover:text-textPrimary hover:font-semibold transition-all ease-in-out"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
