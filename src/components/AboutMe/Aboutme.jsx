@@ -10,7 +10,7 @@ import Github from "../../assets/aboutme/logo github.png";
 
 const AboutMe = () => {
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center" id="about">
       <div className="bg-surfacePrimary lg:w-[93%] w-full rounded-md p-[3em] flex justify-center items-center">
         <div className="flex justify-center  lg:gap-[10em] gap-[2em] flex-col lg:flex-row">
           {/* IMG */}
@@ -49,10 +49,15 @@ const AboutMe = () => {
             </div>
 
             {/* Text */}
-            <div>
+            <div className="flex flex-col gap-2">
               <p className="font-textTypo text-secondaryBrand text-base">
                 About me
               </p>
+              <h3 className="font-sectionTypo text-textPrimary font-medium text-xl">
+                I’m a passionate Front-End developer looking for
+                <br className="hidden lg:block"></br> my first opportunity
+              </h3>
+              <p></p>
             </div>
           </div>
         </div>
