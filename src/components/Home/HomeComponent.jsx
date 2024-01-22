@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-surfaceBackground">
       <NavBar />
-      <div className="flex justify-center items-center  flex-col relative pb-[7em]">
+      <div className="flex justify-center items-center  flex-col relative md:pb-[7em] pb-[3em] ">
         <div
           className={`z-20 flex justify-center items-center mt-[5em] lg:flex-row flex-col-reverse gap-[3em] lg:gap-[14em] w-[87%]`}
           // ${
@@ -33,11 +33,11 @@ const Hero = () => {
               JavaScript, React.js, and Vue.js.
             </p>
 
-            <div className="text-textPrimary flex gap-4">
+            <div className="text-textPrimary flex gap-4 ">
               <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary">
                 <Link
                   to=""
-                  className="flex items-center justify-center gap-1  py-[12px] px-[24px]"
+                  className="flex items-center justify-center gap-1 py-[12px] px-[20px]  sm:py-[12px] sm:px-[24px]"
                 >
                   <span>
                     <img
@@ -53,7 +53,7 @@ const Hero = () => {
               <button className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple ">
                 <Link
                   to="/contact "
-                  className="py-[12px] px-[24px] flex items-center justify-center gap-1"
+                  className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
                 >
                   <span>Get in touch</span>
                   <span>
@@ -85,7 +85,7 @@ const Hero = () => {
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute bottom-0 lg:right-[26em] right-[4em]"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50"
         />
       </div>
       <Outlet></Outlet>
