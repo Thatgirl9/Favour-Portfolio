@@ -80,12 +80,22 @@ const Hero = () => {
         </div>
 
         {/* Arrow Img */}
+        {/* Phone and Laptop view */}
         <img
           src={ArrowImg}
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 md:hidden lg:block"
+        />
+
+        {/* Tablet view */}
+        <img
+          src={ArrowImg}
+          width="121.069px"
+          height="33.707px"
+          alt="Arrow Illustration"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 left-[8em] hidden md:block lg:hidden"
         />
       </div>
       <Outlet></Outlet>
