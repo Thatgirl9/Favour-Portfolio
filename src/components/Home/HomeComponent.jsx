@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className="bg-surfaceBackground">
       <NavBar />
-      <div className="flex justify-center items-center  flex-col relative md:pb-[7em] pb-[3em] ">
+      <div className="flex justify-center items-center  flex-col relative md:pb-[7em] pb-[3em] pt-[4em]">
         <div
           className={`z-20 flex justify-center items-center mt-[5em] lg:flex-row flex-col-reverse gap-[3em] lg:gap-[14em] w-[87%]`}
           // ${
@@ -88,7 +88,7 @@ const Hero = () => {
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 md:hidden lg:block"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z--50 md:hidden lg:block"
         />
 
         {/* Tablet view */}

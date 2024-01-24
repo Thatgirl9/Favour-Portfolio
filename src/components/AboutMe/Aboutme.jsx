@@ -1,4 +1,5 @@
 import "./About.css";
+import { Link } from "react-router-dom";
 import GirlIllustration from "../../assets/aboutme/bro.png";
 import Tailwind from "../../assets/aboutme/Tailwind.png";
 import React from "../../assets/aboutme/React.png";
@@ -7,11 +8,12 @@ import Vue from "../../assets/aboutme/logo vue.png";
 import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
 import Github from "../../assets/aboutme/logo github.png";
+import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 
 const AboutMe = () => {
   return (
-    <section className="flex justify-center" id="about">
-      <div className="bg-surfacePrimary lg:w-[93%] w-full rounded-md p-[3em] flex justify-center items-center">
+    <section className="flex justify-center pb-10" id="about">
+      <div className="bg-surfacePrimary lg:w-[93%] w-full rounded-md px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
         <div className="flex justify-center  lg:gap-[10em] gap-[2em] flex-col lg:flex-row">
           {/* IMG */}
           <div>
@@ -57,7 +59,33 @@ const AboutMe = () => {
                 I’m a passionate Front-End developer looking for
                 <br className="hidden lg:block"></br> my first opportunity
               </h3>
-              <p></p>
+              <p className="text-textSecondary font-sectionTypo text-base mt-3">
+                Beyond coding, I am a Technical Writer , a cat lover, who enjoys
+                <br className="hidden lg:block"></br>
+                spending my free time watching a movie or reading an article.
+                <br className="hidden lg:block"></br>I am currently seeking
+                opportunities tobring my skills and
+                <br className="hidden lg:block"></br> enthusiasm to a tech
+                company.
+              </p>
+
+              <button className=" bg-primaryBrand500 rounded-md hover:bg-gradientPurple text-textPrimary w-[10em] mt-4">
+                <Link
+                  to="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6b090f48-8f88-4820-a72b-2452bdb9c11d"
+                  className="flex items-center justify-center gap-1 py-[11px] px-[20px] sm:py-[12px] sm:px-[24px] "
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>
+                    <img
+                      src={CvLogo}
+                      className="w-[24px] h-[24px]"
+                      alt="Book Icon"
+                    />
+                  </span>
+                  <span>My resume</span>
+                </Link>
+              </button>
             </div>
           </div>
         </div>

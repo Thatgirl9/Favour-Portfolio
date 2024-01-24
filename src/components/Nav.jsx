@@ -20,7 +20,7 @@ const NavBar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-surfaceBackground w-full md:px-14 px-6 py-4">
+    <header className="bg-surfaceBackground w-full md:px-14 px-6 py-4 fixed z-50">
       {/* second header */}
       <nav className="lg:flex lg:justify-between lg:items-center">
         {/* Logo Hamburger */}
