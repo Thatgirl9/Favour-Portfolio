@@ -13,6 +13,7 @@ export default {
         gradientPurple: '#9955E8',
         secondaryBrand: '#7DFFAF',
         gradientGreen: "#7BFFAF",
+        shadowGreen: "rgba(125, 255, 175, 0.24)",
 
         // Surface Colors
         surfaceBackground: '#171023',
