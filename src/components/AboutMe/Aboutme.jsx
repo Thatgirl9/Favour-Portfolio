@@ -12,7 +12,7 @@ import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 
 const AboutMe = () => {
   return (
-    <section className="flex justify-center pb-10" id="about">
+    <section className="flex justify-center pb-[4em] lg:pb-[6em]" id="about">
       <div className="bg-surfacePrimary lg:w-[93%] w-full rounded-md px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
         <div className="flex justify-center  lg:gap-[10em] gap-[2em] flex-col lg:flex-row">
           {/* IMG */}
@@ -60,11 +60,11 @@ const AboutMe = () => {
                 <br className="hidden lg:block"></br> my first opportunity
               </h3>
               <p className="text-textSecondary font-sectionTypo text-base mt-3">
-                Beyond coding, I am a Technical Writer , a cat lover, who enjoys
-                <br className="hidden lg:block"></br>
-                spending my free time watching a movie or reading an article.
+                Beyond coding, I am a Technical Writer , a cat lover, who enjoys{" "}
+                <br className="hidden lg:block"></br> spending my free time
+                watching a movie or reading an article.
                 <br className="hidden lg:block"></br>I am currently seeking
-                opportunities tobring my skills and
+                opportunities to bring my skills and
                 <br className="hidden lg:block"></br> enthusiasm to a tech
                 company.
               </p>
