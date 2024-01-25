@@ -4,14 +4,14 @@ import SparklesOne from "../../assets/projects/Graphic (1).png";
 import SparklesTwo from "../../assets/projects/Graphic (2).png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 import ProjectOne from "../../assets/projects/Placeholder.png";
+import ProjectTwo from "../../assets/projects/Placeholder 1.png";
+import ProjectThree from "../../assets/projects/Placeholder 2.png";
 import Tailwind from "../../assets/aboutme/Tailwind.png";
 import React from "../../assets/aboutme/React.png";
 import Js from "../../assets/aboutme/Frame.png";
 import Vue from "../../assets/aboutme/logo vue.png";
 import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
-import Github from "../../assets/aboutme/logo github.png";
-import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 
 const Projects = () => {
   return (
@@ -83,50 +83,41 @@ const Projects = () => {
           <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer  w-[90%] md:w-fit">
             <div>
               <img
-                src={ProjectOne}
-                alt="ChatApp Project Image"
+                src={ProjectTwo}
+                alt="Podcast Project Image"
                 className="w-[20em]"
               />
             </div>
             <div className="mt-2 font-sectionTypo">
               <div className="flex justify-between">
-                <p className="text-textSecondary text-sm">October 2023</p>
+                <p className="text-textSecondary text-sm">May 2023</p>
                 <p className="flex gap-3">
                   <img
-                    src={Tailwind}
-                    alt="Tailwind Logo"
-                    className="w-[24px] h-[24px]"
+                    src={Html}
+                    alt="Html Logo"
+                    className="w-[20px] h-[20px]"
                   />
-                  <img
-                    src={Js}
-                    alt="JavaScript Logo"
-                    className="w-[24px] h-[22px]"
-                  />
-                  <img
-                    src={React}
-                    alt="React Logo"
-                    className="w-[24px] h-[24px]"
-                  />
+                  <img src={Css} alt="CSS Logo" className="w-[20px] h-[20px]" />
                 </p>
               </div>
 
               <h2 className="text-textPrimary mt-3 text-xl font-medium">
-                QuaaPay Chat App
+                Podcast Landing Page
               </h2>
               <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-                Dashboard Chat App to connect people and spark conversations for
-                QuaaPay Wallet.
+                Podcast page to deliver captivating audio contents to its
+                audience.
               </p>
             </div>
           </div>
           {/* End of Project Card */}
 
           {/* Project 1 */}
-          <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer hover:z-50 md:hover:z-auto  w-[90%] md:w-fit ">
+          <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit ">
             <div>
               <img
-                src={ProjectOne}
-                alt="ChatApp Project Image"
+                src={ProjectThree}
+                alt="Noir Chef Project Image"
                 className="w-[20em]"
               />
             </div>
@@ -144,16 +135,12 @@ const Projects = () => {
                     alt="JavaScript Logo"
                     className="w-[24px] h-[22px]"
                   />
-                  <img
-                    src={React}
-                    alt="React Logo"
-                    className="w-[24px] h-[24px]"
-                  />
+                  <img src={Vue} alt="Vue Logo" className="w-[20px] h-[20px]" />
                 </p>
               </div>
 
               <h2 className="text-textPrimary mt-3 text-xl font-medium">
-                QuaaPay Chat App
+                Noir Chef Landing Page
               </h2>
               <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
                 Dashboard Chat App to connect people and spark conversations for
@@ -162,28 +149,12 @@ const Projects = () => {
             </div>
           </div>
           {/* End of Project Card */}
-
-          {/* <button className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple">
-            <Link
-              to="/contact "
-              className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
-            >
-              <span>Get in touch</span>
-              <span>
-                <img
-                  src={ArrowRight}
-                  className="w-[24px] h-[24px]"
-                  alt="Arrow Right Icon"
-                />
-              </span>
-            </Link>
-          </button> */}
         </div>
         {/* End of Product */}
 
         <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary text-textPrimary">
           <Link
-            to="/contact "
+            to="/projectpage"
             className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
           >
             <span>See all</span>
