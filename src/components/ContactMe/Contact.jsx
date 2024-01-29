@@ -1,5 +1,6 @@
 import "./contact.css";
 import Girl from "../../assets/contactme/Cute Avatar.png";
+import ArrowRight from "../../assets/general/ArrowRight.png";
 
 const ContactMe = () => {
   return (
@@ -100,18 +101,26 @@ const ContactMe = () => {
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
                 placeholder="Name"
               />
-
               <input
                 type="email"
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
                 placeholder="E-mail"
               />
-
               <textarea
                 type="text"
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
                 placeholder="Your message"
               ></textarea>
+              <button className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1 text-textPrimary">
+                <span>Send me a message</span>
+                <span>
+                  <img
+                    src={ArrowRight}
+                    className="w-[24px] h-[24px]"
+                    alt="Arrow Right Icon"
+                  />
+                </span>
+              </button>
             </form>
           </article>
         </div>
