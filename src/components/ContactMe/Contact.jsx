@@ -5,7 +5,7 @@ const ContactMe = () => {
   return (
     <section id="contact" className="flex justify-center pb-[4em] lg:pb-[6em]">
       <main className="bg-surfacePrimary lg:w-[93%] w-full rounded-md px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
-        <div className="flex lg:flex-row flex-col gap-[15em]">
+        <div className="flex lg:flex-row flex-col gap-[6em]">
           {/* First Div with Image */}
           <article className="flex flex-col gap-7">
             {/* Image */}
@@ -93,9 +93,25 @@ const ContactMe = () => {
           </article>
 
           {/* Second Div with Form */}
-          <article className="border-2">
-            <form action="">
-              <input type="name" className="bg-surfaceBackground " />
+          <article className=" ">
+            <form action="" className="flex flex-col gap-[1em]">
+              <input
+                type="name"
+                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
+                placeholder="Name"
+              />
+
+              <input
+                type="email"
+                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
+                placeholder="E-mail"
+              />
+
+              <textarea
+                type="text"
+                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
+                placeholder="Your message"
+              ></textarea>
             </form>
           </article>
         </div>
