@@ -1,7 +1,6 @@
 import "./contact.css";
 import Girl from "../../assets/contactme/Cute Avatar.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
-import { Link } from "react-router-dom";
 
 const ContactMe = () => {
   const handleForm = (e) => {
@@ -12,7 +11,7 @@ const ContactMe = () => {
   return (
     <section id="contact" className="flex justify-center pb-[4em] lg:pb-[6em]">
       <main className="bg-surfacePrimary lg:w-[93%] w-full rounded-md px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
-        <div className="flex lg:flex-row flex-col gap-[6em]">
+        <div className="flex lg:flex-row flex-col lg:gap-[6em] gap-[4em]">
           {/* First Div with Image */}
           <article className="flex flex-col gap-7">
             {/* Image */}
@@ -87,25 +86,26 @@ const ContactMe = () => {
                     </svg>
                   </a>
                 </button>
-                {/* InstaGram */}
+                {/* X/Twitter */}
                 <button className="bg-surfaceSecondary p-2 rounded-md border border-transparent hover:border-secondaryBrand">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
+                  <a
+                    href="https://twitter.com/favourukonu_"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <path
-                      d="M16.3748 3.24984C17.5342 3.25331 18.6451 3.71539 19.4648 4.53517C20.2846 5.35495 20.7467 6.46582 20.7502 7.62516V16.3748C20.7467 17.5342 20.2846 18.6451 19.4648 19.4648C18.6451 20.2846 17.5342 20.7467 16.3748 20.7502H7.62516C6.46582 20.7467 5.35495 20.2846 4.53517 19.4648C3.71539 18.6451 3.25331 17.5342 3.24984 16.3748V7.62516C3.25331 6.46582 3.71539 5.35495 4.53517 4.53517C5.35495 3.71539 6.46582 3.25331 7.62516 3.24984H16.3748ZM16.3748 1.5H7.62516C4.25625 1.5 1.5 4.25625 1.5 7.62516V16.3748C1.5 19.7437 4.25625 22.5 7.62516 22.5H16.3748C19.7437 22.5 22.5 19.7437 22.5 16.3748V7.62516C22.5 4.25625 19.7437 1.5 16.3748 1.5Z"
-                      fill="#F5F6F6"
-                    />
-                    <path
-                      d="M17.6873 7.62512C17.4278 7.62512 17.174 7.54815 16.9582 7.40393C16.7423 7.25971 16.5741 7.05472 16.4748 6.81489C16.3754 6.57507 16.3494 6.31117 16.4001 6.05657C16.4507 5.80197 16.5757 5.5681 16.7593 5.38454C16.9428 5.20099 17.1767 5.07599 17.4313 5.02534C17.6859 4.9747 17.9498 5.00069 18.1896 5.10003C18.4294 5.19937 18.6344 5.3676 18.7786 5.58344C18.9229 5.79928 18.9998 6.05303 18.9998 6.31262C19.0002 6.48509 18.9665 6.65593 18.9007 6.81533C18.8349 6.97474 18.7382 7.11958 18.6163 7.24153C18.4943 7.36348 18.3495 7.46014 18.1901 7.52597C18.0306 7.5918 17.8598 7.62549 17.6873 7.62512ZM12 8.49981C12.6923 8.49981 13.369 8.70509 13.9446 9.08969C14.5202 9.4743 14.9688 10.0209 15.2337 10.6605C15.4986 11.3001 15.568 12.0038 15.4329 12.6828C15.2978 13.3618 14.9645 13.9854 14.475 14.4749C13.9855 14.9645 13.3618 15.2978 12.6828 15.4329C12.0039 15.5679 11.3001 15.4986 10.6606 15.2337C10.021 14.9688 9.47433 14.5201 9.08973 13.9445C8.70513 13.369 8.49985 12.6922 8.49985 12C8.50084 11.072 8.86992 10.1823 9.52611 9.52608C10.1823 8.86989 11.072 8.5008 12 8.49981ZM12 6.74997C10.9617 6.74997 9.94662 7.05787 9.08326 7.63475C8.2199 8.21163 7.54699 9.03157 7.14963 9.99088C6.75227 10.9502 6.64831 12.0058 6.85088 13.0242C7.05345 14.0426 7.55347 14.9781 8.28769 15.7123C9.02192 16.4465 9.95738 16.9465 10.9758 17.1491C11.9942 17.3517 13.0498 17.2477 14.0091 16.8503C14.9684 16.453 15.7883 15.7801 16.3652 14.9167C16.9421 14.0534 17.25 13.0383 17.25 12C17.25 10.6076 16.6969 9.27222 15.7123 8.28766C14.7277 7.30309 13.3924 6.74997 12 6.74997Z"
-                      fill="#F5F6F6"
-                      className="hover:fill-secondaryBrand"
-                    />
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                    >
+                      <path
+                        d="M5.14286 2.25C2.30625 2.25 0 4.26797 0 6.75V29.25C0 31.732 2.30625 33.75 5.14286 33.75H30.8571C33.6937 33.75 36 31.732 36 29.25V6.75C36 4.26797 33.6937 2.25 30.8571 2.25H5.14286ZM29.017 8.15625L20.6759 16.4953L30.4875 27.8438H22.8054L16.7946 20.9602L9.90804 27.8438H6.09107L15.0107 18.9211L5.60089 8.15625H13.4759L18.9161 14.4492L25.2 8.15625H29.017ZM25.9795 25.8469L12.3268 10.0477H10.0527L23.858 25.8469H25.9714H25.9795Z"
+                        fill="#F5F6F6"
+                      />
+                    </svg>
+                  </a>
                 </button>
               </div>
             </div>
@@ -134,7 +134,7 @@ const ContactMe = () => {
                 placeholder="Your message"
               ></textarea>
               <button
-                className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple py-[12px]  flex items-center justify-center gap-2 text-textPrimary w-[60%] lg:w-[65%] mt-[1em]"
+                className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple py-[12px]  flex items-center justify-center gap-2 text-textPrimary w-[60%] md:w-[15em] lg:w-[65%] mt-[1em]"
                 type="submit"
               >
                 <span>Send me a message</span>
