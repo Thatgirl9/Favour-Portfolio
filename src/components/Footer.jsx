@@ -1,7 +1,10 @@
 import ArrowRight from "../assets/general/ArrowRight.png";
 import "animate.css";
-
 const Footer = () => {
+  // const backToTopBtn = {
+  //   background: "black",
+  //   animateRepeat: "4",
+  // };
   return (
     <footer className="flex lg:justify-center justify-start items-start lg:items-center pb-[2em] px-[1.5em] lg:px-0">
       <main className="text-textSecondary font-sectionTypo text-base flex justify-between flex-col lg:flex-row lg:w-[86%] gap-[1.6em] lg:gap-0">
@@ -35,10 +38,13 @@ const Footer = () => {
               X
             </a>
           </p>
-          <button className="">
+          <button
+            className="animate__bounce animate__animated animate__repeat-3"
+            // style={backToTopBtn}
+          >
             <img
               src={ArrowRight}
-              className="w-[24px] h-[24px] transform rotate-[270deg]"
+              className="w-[24px] h-[24px] transform rotate-[270deg] "
               alt="Arrow Right Icon"
             />
           </button>

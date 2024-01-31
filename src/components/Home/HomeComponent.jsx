@@ -5,6 +5,7 @@ import HomeBro from "../../assets/homehero/bro.png";
 import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 import ArrowImg from "../../assets/homehero/Graphic.png";
+import "animate.css";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
           // }
         >
           {/* Text */}
-          <div className="text-textPrimary font-sectionTypo flex flex-col">
+          <div className="text-textPrimary font-sectionTypo flex flex-col animate__animated animate__slideInLeft">
             <h1 className="font-textTypo gradient bg-gradient-to-r from-gradientPurple to-gradientGreen bg-clip-text text-transparent text-3xl mb-[1em]">
               Hi, I’m Favour
             </h1>
@@ -71,7 +72,7 @@ const Hero = () => {
           </div>
 
           {/* Img */}
-          <div>
+          <div className="animate__slideInRight animate__animated">
             <img
               src={HomeBro}
               width="400em"
@@ -88,7 +89,7 @@ const Hero = () => {
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z--50 md:hidden lg:block"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z--50 md:hidden lg:block animate__shakeY animate__animated animate__delay-3s"
         />
 
         {/* Tablet view */}
@@ -97,7 +98,7 @@ const Hero = () => {
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 left-[8em] hidden md:block lg:hidden"
+          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 left-[8em] hidden md:block lg:hidden  animate__shakeY animate__animated animate__delay-3s"
         />
       </div>
       <Outlet></Outlet>

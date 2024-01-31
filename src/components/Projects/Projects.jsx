@@ -13,6 +13,8 @@ import Vue from "../../assets/aboutme/logo vue.png";
 import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
 import "animate.css";
+// import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () => {
   return (
@@ -37,7 +39,7 @@ const Projects = () => {
         </div>
 
         {/* Project  */}
-        <div className="flex gap-7 lg:gap- 5 md:flex-row flex-col md:flex-wrap md:full  justify-center items-center pb-[3em]">
+        <div className="flex gap-7 lg:gap- 5 md:flex-row flex-col md:flex-wrap md:full  justify-center items-center pb-[3em] ">
           {/* Project 1 */}
           <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit">
             <div>
@@ -124,7 +126,7 @@ const Projects = () => {
             </div>
             <div className="mt-2 font-sectionTypo">
               <div className="flex justify-between">
-                <p className="text-textSecondary text-sm">October 2023</p>
+                <p className="text-textSecondary text-sm">January 2024</p>
                 <p className="flex gap-3">
                   <img
                     src={Tailwind}
@@ -144,8 +146,8 @@ const Projects = () => {
                 Noir Chef Landing Page
               </h2>
               <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-                Dashboard Chat App to connect people and spark conversations for
-                QuaaPay Wallet.
+                A restaurant that specializes in Homestyle Sushi and Dining
+                Events.
               </p>
             </div>
           </div>
@@ -159,7 +161,7 @@ const Projects = () => {
             className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
           >
             <span>See all</span>
-            <span>
+            <span className="animate__animated animate__headShake animate__repeat-2 inline-block animate__delay-4s">
               <img
                 src={ArrowRight}
                 className="w-[24px] h-[24px]"
