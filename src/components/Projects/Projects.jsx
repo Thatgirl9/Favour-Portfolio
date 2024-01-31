@@ -12,6 +12,7 @@ import Js from "../../assets/aboutme/Frame.png";
 import Vue from "../../assets/aboutme/logo vue.png";
 import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
+import "animate.css";
 
 const Projects = () => {
   return (

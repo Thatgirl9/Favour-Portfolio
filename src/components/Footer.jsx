@@ -1,4 +1,5 @@
 import ArrowRight from "../assets/general/ArrowRight.png";
+import "animate.css";
 
 const Footer = () => {
   return (
