@@ -54,8 +54,8 @@ const Hero = () => {
               </button>
 
               <button className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple ">
-                <Link
-                  to="/contact "
+                <a
+                  href="#contact"
                   className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
                 >
                   <span>Get in touch</span>
@@ -66,7 +66,7 @@ const Hero = () => {
                       alt="Arrow Right Icon"
                     />
                   </span>
-                </Link>
+                </a>
               </button>
             </div>
           </div>
