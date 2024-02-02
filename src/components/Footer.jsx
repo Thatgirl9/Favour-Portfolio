@@ -1,10 +1,31 @@
 import ArrowRight from "../assets/general/ArrowRight.png";
+import { useRef, useEffect, useState } from "react";
 import "animate.css";
 const Footer = () => {
-  // const backToTopBtn = {
-  //   background: "black",
-  //   animateRepeat: "4",
-  // };
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const animatedElementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // if (entry.isIntersecting) {
+          //   setIsIntersecting(true);
+          // }
+          setIsIntersecting(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(animatedElementRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="flex lg:justify-center justify-start items-start lg:items-center pb-[2em] px-[1.5em] lg:px-0">
       <main className="text-textSecondary font-sectionTypo text-base flex justify-between flex-col lg:flex-row lg:w-[86%] gap-[1.6em] lg:gap-0">
@@ -39,8 +60,11 @@ const Footer = () => {
             </a>
           </p>
           <button
-            className="animate__bounce animate__animated animate__repeat-3 animate__delay-4s"
-            // style={backToTopBtn}
+            ref={animatedElementRef}
+            className={` ${
+              isIntersecting ? "animate__bounce" : ""
+            }  animate__animated animate__repeat-2 transition-all`}
+            onClick={handleScrollToTop}
           >
             <img
               src={ArrowRight}
