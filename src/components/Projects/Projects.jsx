@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useRef, useEffect, useState } from "react";
 import "./project.css";
 import SparklesOne from "../../assets/projects/Graphic (1).png";
 import SparklesTwo from "../../assets/projects/Graphic (2).png";
@@ -14,9 +15,28 @@ import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
 import "animate.css";
 // import AOS from "aos";
-import "aos/dist/aos.css";
 
 const Projects = () => {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const animatedElementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          // if (entry.isIntersecting) {
+          //   setIsIntersecting(true);
+          // }
+          setIsIntersecting(entry.isIntersecting);
+        });
+      },
+      { threshold: 0.2 }
+    );
+    observer.observe(animatedElementRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div
       className="flex flex-col justify-center items-center pb-[3em]"
@@ -161,7 +181,12 @@ const Projects = () => {
             className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
           >
             <span>See all</span>
-            <span className="animate__animated animate__headShake animate__repeat-2 inline-block animate__delay-4s">
+            <span
+              ref={animatedElementRef}
+              className={` ${
+                isIntersecting ? "animate__headShake" : ""
+              } animate__animated  animate__repeat-2 inline-block  transition-all`}
+            >
               <img
                 src={ArrowRight}
                 className="w-[24px] h-[24px]"

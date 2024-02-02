@@ -1,14 +1,3 @@
 header {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }
-
-.gradient {
-  /* background: var(
-    --brand-gradient-horizontal,
-    linear-gradient(90deg, #9955e8 0%, #7bffaf 100%)
-  /* ); */
-  /* background: linear-gradient(90deg, #9955e8 50%, #7bffaf 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-}

@@ -89,3 +89,25 @@ Instagram SVG
                       className="hover:fill-secondaryBrand"
                     />
                   </svg> */}
+
+
+
+                  const observer = new IntersectionObserver((entries) => {
+    // Loop over the entries
+    entries.forEach((entry) => {
+      const arrow = entry.target.querySelector(".see-all-arrow");
+
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+
+        arrow.classList.add("animate__headShake");
+        return;
+      }
+      // We are not intersecting, so Remove the animation class
+
+      arrow.classList.remove("animate__headShake");
+    });
+  });
+
+  observer.observe(document.querySelector(".arrow-wrapper"));

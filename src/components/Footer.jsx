@@ -39,7 +39,7 @@ const Footer = () => {
             </a>
           </p>
           <button
-            className="animate__bounce animate__animated animate__repeat-3"
+            className="animate__bounce animate__animated animate__repeat-3 animate__delay-4s"
             // style={backToTopBtn}
           >
             <img
