@@ -6,14 +6,22 @@ import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 import ArrowImg from "../../assets/homehero/Graphic.png";
 import "animate.css";
+// import { useState } from "react";
 
 const Hero = () => {
+  // const [isBlurred, setBlurred] = useState(false);
+
+  // const toggleBlurred = (value) => {
+  //   // setBlurred((prevBlurred) => !prevBlurred);
+  //   setBlurred(value);
+  // };
+
   return (
     <section className="bg-surfaceBackground">
       <NavBar />
       <div className="flex justify-center items-center  flex-col relative md:pb-[7em] pb-[3em] pt-[4em]">
         <div
-          className={`z-20 flex justify-center items-center mt-[5em] lg:flex-row flex-col-reverse gap-[3em] lg:gap-[14em] w-[87%]`}
+          className={`z-20 flex justify-center items-center mt-[5em] lg:flex-row flex-col-reverse gap-[3em] lg:gap-[14em] w-[87%] `}
           // ${
           //   open
           //     ? "blur-sm h-screen md:w[50%] w-[60%] lg:hidden block"
@@ -28,10 +36,16 @@ const Hero = () => {
             <h3 className="text-xl font-medium mb-[0.5em]">
               Front-End developer and Web developer
             </h3>
-            <p className="text-textSecondary text-base mb-[1.8em]">
+            {/* <p className="text-textSecondary text-base mb-[1.8em]">
               I specialize in building innovative web applications using
               <br className="hidden lg:block"></br> technologies such as
               JavaScript, React.js, and Vue.js.
+            </p> */}
+
+            <p className="text-textSecondary text-base mb-[1.8em]">
+              My area of expertise is creating cutting-edge online{" "}
+              <br className="hidden lg:block"></br>
+              applications with tools like JavaScript, React.js, and Vue.js.
             </p>
 
             <div className="text-textPrimary flex gap-4 ">

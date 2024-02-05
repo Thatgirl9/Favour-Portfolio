@@ -111,3 +111,11 @@ Instagram SVG
   });
 
   observer.observe(document.querySelector(".arrow-wrapper"));
+
+  /   className={`${
+          //     open
+          //       ? "fixed top-[3.8em] left-0 z-20 h-screen md:w[50%] w-[40%] lg:hidden block bg-transparent blur-2xl "
+          //       : "blur-none h-0"
+          //   }  fixed top-[3.8em] left-0 lg:relative lg:top-0 lg:left-0 lg:h-screen w-1/2 h-screen z-30 bg-blend-overlay block lg:hidden border-2`}
+          // >
+          //   {" "}

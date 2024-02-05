@@ -5,8 +5,7 @@ import "./Home/home.css";
 
 const NavBar = () => {
   // NavBar.propTypes = {
-  //   setOpen: PropTypes.func.isRequired,
-  //   open: PropTypes.bool.isRequired,
+  //   toggleNav: PropTypes.func.isRequired,
   // };
 
   let Links = [
@@ -20,7 +19,10 @@ const NavBar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-surfaceBackground w-full md:px-14 px-6 py-4 fixed z-50">
+    <header
+      className={`bg-surfaceBackground w-full md:px-14 px-6 py-4 fixed z-50 
+      `}
+    >
       {/* second header */}
       <nav className="lg:flex lg:justify-between lg:items-center">
         {/* Logo Hamburger */}
@@ -42,16 +44,11 @@ const NavBar = () => {
         </div>
 
         {/* Links */}
-        <div className=" block">
-          {/* <div
-            className={`${
-              open
-                ? "fixed top-[3.8em] left-0 z-20 h-screen md:w[50%] w-[60%] lg:hidden block bg-transparent blur-2xl"
-                : "blur-none h-0"
-            }  fixed top-[3.8em] left-0 lg:relative lg:top-0 lg:left-0 lg:h-screen w-1/2 h-screen z-30 bg-blend-overlay block lg:hidden `}
-          >
-            {" "}
-          </div> */}
+        <div className=" block ">
+          {/* {open && (
+            <div className="fixed inset-0 bg-opacity-75 blur-md z-50"></div>
+          )} */}
+          {/* <div className={`border-2 w-[40%] `}></div> */}
           <div
             className={`links h-0 overflow-hidden transition-all lg:h-auto bg-surfacePrimary lg:bg-transparent absolute top-[3.8em] right-0 lg:relative lg:top-0 lg:right-0 lg:border-none  lg:rounded-none duration-150 ease-in-out z-50
           ${open ? "h-[100vh] md:w-[50%] w-[60%] overflow-auto" : "h-0 "}`}
