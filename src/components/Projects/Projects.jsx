@@ -61,14 +61,15 @@ const Projects = () => {
         {/* Project  */}
         <div className="flex gap-7 lg:gap- 5 md:flex-row flex-col md:flex-wrap md:full  justify-center items-center pb-[3em] ">
           {/* Project 1 */}
-          <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit">
-            <div>
+          <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit project-div">
+            <div className="project-img">
               <img
                 src={ProjectOne}
                 alt="ChatApp Project Image"
                 className="w-[20em]"
               />
             </div>
+
             <div className="mt-2 font-sectionTypo">
               <div className="flex justify-between">
                 <p className="text-textSecondary text-sm">October 2023</p>
