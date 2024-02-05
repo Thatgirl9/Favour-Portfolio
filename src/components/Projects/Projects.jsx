@@ -173,7 +173,7 @@ const Projects = () => {
           </div>
           {/* End of Project Card */}
         </div>
-        {/* End of Product */}
+        {/* End of Project */}
 
         <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary text-textPrimary">
           <Link
