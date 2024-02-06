@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="text-textPrimary flex gap-4 ">
               <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary">
                 <Link
-                  to="https://acrobat.adobe.com/id/urn:aaid:sc:EU:6b090f48-8f88-4820-a72b-2452bdb9c11d"
+                  to="https://drive.google.com/file/d/1z07UOgFaPLLSbPypHT3W6fMI9zfKoA2A/view?usp=drive_link"
                   className="flex items-center justify-center gap-1 py-[12px] px-[20px]  sm:py-[12px] sm:px-[24px]"
                   target="_blank"
                   rel="noreferrer"
