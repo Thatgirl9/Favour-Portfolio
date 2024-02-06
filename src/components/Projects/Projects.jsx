@@ -45,16 +45,16 @@ const Projects = () => {
         </h2>
       </div>
 
-      <div className="flex flex-col justify-center items-center pt-[2em] pb-[3em] ">
+      <div className="flex flex-col justify-center items-center pt-[5em] pb-[3em] relative">
         {/* Sparkles */}
 
-        <div className="justify-start items-start flex w-full lg:pb-[2em] pb-0">
-          <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
-        </div>
-
-        {/* <div className="absolute left-[-1em] md:left-[-1.5em] md:top-0 top-[2.3em]">
+        {/* <div className="justify-start items-start flex w-full lg:pb-[2em] pb-0">
           <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
         </div> */}
+
+        <div className="absolute left-[-1em] md:left-[-1.5em] md:top-0 top-[2.3em]">
+          <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
+        </div>
 
         <ProjectComponent />
 
@@ -80,11 +80,7 @@ const Projects = () => {
         </button>
 
         {/* Sparkles Two */}
-        {/* <div className="absolute md:bottom-[1em] bottom-[7em] right-[-0.8em] lg:right-[-1.5em] z-30 md:z-auto">
-          <img src={SparklesTwo} alt="Sparkles" className="w-[62px] h-[64px]" />
-        </div> */}
-
-        <div className="flex justify-end items-end w-full mt-[-3em] lg:mt-0">
+        <div className="absolute md:bottom-[1em] bottom-[7em] right-[-0.8em] lg:right-[-1.5em] z-30 md:z-auto">
           <img src={SparklesTwo} alt="Sparkles" className="w-[62px] h-[64px]" />
         </div>
       </div>

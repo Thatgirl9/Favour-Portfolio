@@ -3,8 +3,8 @@
 }
 
 .project-img:hover {
-  opacity: 0.5;
-  /* position: relative; */
+  opacity: 0.9;
+  /* position: relative;  */
 }
 
 /* .project-img::before {

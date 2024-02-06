@@ -119,3 +119,14 @@ Instagram SVG
           //   }  fixed top-[3.8em] left-0 lg:relative lg:top-0 lg:left-0 lg:h-screen w-1/2 h-screen z-30 bg-blend-overlay block lg:hidden border-2`}
           // >
           //   {" "}
+
+
+
+{/* <div className="justify-start items-start flex w-full lg:pb-[2em] pb-0">
+          <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
+        </div> */}
+
+       {/* 
+        <div className="flex justify-end items-end w-full mt-[-3em] lg:mt-0">
+          <img src={SparklesTwo} alt="Sparkles" className="w-[62px] h-[64px]" />
+        </div> */}  
