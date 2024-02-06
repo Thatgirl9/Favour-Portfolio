@@ -4,4 +4,10 @@
 
 .project-img:hover {
   opacity: 0.5;
+  /* position: relative; */
 }
+
+/* .project-img::before {
+  content: "";
+  position: relative;
+} */

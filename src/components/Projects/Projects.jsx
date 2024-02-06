@@ -6,7 +6,7 @@ import SparklesTwo from "../../assets/projects/Graphic (2).png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 
 import "animate.css";
-import ProjectComponent from "../ProjectComp/ProjectCom";
+import ProjectComponent from "../ProjectCom";
 // import AOS from "aos";
 
 const Projects = () => {

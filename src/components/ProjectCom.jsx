@@ -1,14 +1,15 @@
 import { useState } from "react";
-import ProjectOne from "../../assets/projects/Placeholder.png";
-import ProjectTwo from "../../assets/projects/Placeholder 1.png";
-import ProjectThree from "../../assets/projects/Placeholder 2.png";
-import Tailwind from "../../assets/aboutme/Tailwind.png";
-import React from "../../assets/aboutme/React.png";
-import Js from "../../assets/aboutme/Frame.png";
-import Vue from "../../assets/aboutme/logo vue.png";
-import Html from "../../assets/aboutme/logo html5.png";
-import Css from "../../assets/aboutme/logo css3.png";
+// import ProjectOne from "../assets/"
 
+import ProjectOne from "../assets/projects/Placeholder.png";
+import ProjectTwo from "../assets/projects/Placeholder 1.png";
+import ProjectThree from "../assets/projects/Placeholder 2.png";
+import Tailwind from "../assets/aboutme/Tailwind.png";
+import React from "../assets/aboutme/React.png";
+import Js from "../assets/aboutme/Frame.png";
+import Vue from "../assets/aboutme/logo vue.png";
+import Html from "../assets/aboutme/logo html5.png";
+import Css from "../assets/aboutme/logo css3.png";
 const ProjectComponent = () => {
   // To track the hovered Project Image
   const [isHovered, setIsHovered] = useState(false);
@@ -18,7 +19,7 @@ const ProjectComponent = () => {
       {/* Project 1 */}
       <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit project-div">
         <div
-          className="project-img relative overflow-hidden"
+          className="project-img  overflow-hidden"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -30,7 +31,7 @@ const ProjectComponent = () => {
         </div>
 
         {isHovered && (
-          <div className="absolute top-0 right-0 transform -translate-y-1/2">
+          <div className="absolute top-0 right-0 transform -translate-y-1/2 project-icon">
             <button className="bg-surfaceSecondary p-2 rounded-md border border-transparent hover:border-secondaryBrand">
               <a
                 href="https://github.com/Thatgirl9"
