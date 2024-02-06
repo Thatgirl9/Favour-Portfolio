@@ -19,7 +19,7 @@ const ProjectComponent = () => {
       {/* Project 1 */}
       <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit project-div">
         <div
-          className="project-img  overflow-hidden"
+          className="project-img  overflow-hidden relative"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
