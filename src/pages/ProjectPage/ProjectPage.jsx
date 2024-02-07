@@ -1,7 +1,7 @@
 import "./project.css";
-import ProjectOne from "../../assets/projects/Placeholder.png";
-import ProjectTwo from "../../assets/projects/Placeholder 1.png";
-import ProjectThree from "../../assets/projects/Placeholder 2.png";
+// import ProjectOne from "../../assets/projects/Placeholder.png";
+// import ProjectTwo from "../../assets/projects/Placeholder 1.png";
+// import ProjectThree from "../../assets/projects/Placeholder 2.png";
 import Tailwind from "../../assets/aboutme/Tailwind.png";
 import React from "../../assets/aboutme/React.png";
 import Js from "../../assets/aboutme/Frame.png";
@@ -9,6 +9,10 @@ import Vue from "../../assets/aboutme/logo vue.png";
 import Html from "../../assets/aboutme/logo html5.png";
 import Css from "../../assets/aboutme/logo css3.png";
 import Github from "../../assets/aboutme/logo github.png";
+import Img from "../../assets/projectPage/Placeholder.png";
+import ImgOne from "../../assets/projectPage/Placeholder 1.png";
+import ImgTwo from "../../assets/projectPage/Placeholder 2.png";
+import ImgThree from "../../assets/projectPage/Placeholder 3.png";
 
 const ProjectPage = () => {
   return (
@@ -27,11 +31,7 @@ const ProjectPage = () => {
         {/* Project 1 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit">
           <div>
-            <img
-              src={ProjectOne}
-              alt="ChatApp Project Image"
-              className="w-[20em]"
-            />
+            <img src={Img} alt="ChatApp Project Image" className="w-[20em]" />
           </div>
           <div className="mt-2 font-sectionTypo">
             <div className="flex justify-between">
@@ -66,11 +66,11 @@ const ProjectPage = () => {
         </div>
         {/* End of Project Card */}
 
-        {/* Project 1 */}
+        {/* Project 2 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer  w-[90%] md:w-fit">
           <div>
             <img
-              src={ProjectTwo}
+              src={ImgTwo}
               alt="Podcast Project Image"
               className="w-[20em]"
             />
@@ -95,11 +95,11 @@ const ProjectPage = () => {
         </div>
         {/* End of Project Card */}
 
-        {/* Project 1 */}
+        {/* Project 3 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit ">
           <div>
             <img
-              src={ProjectThree}
+              src={ImgThree}
               alt="Noir Chef Project Image"
               className="w-[20em]"
             />
@@ -133,11 +133,11 @@ const ProjectPage = () => {
         </div>
         {/* End of Project Card */}
 
-        {/* Project 1 */}
+        {/* Project 4 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit">
           <div>
             <img
-              src={ProjectOne}
+              src={ImgOne}
               alt="ChatApp Project Image"
               className="w-[20em]"
             />
@@ -175,11 +175,11 @@ const ProjectPage = () => {
         </div>
         {/* End of Project Card */}
 
-        {/* Project 1 */}
+        {/* Project 5 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer  w-[90%] md:w-fit">
           <div>
             <img
-              src={ProjectTwo}
+              src={ImgTwo}
               alt="Podcast Project Image"
               className="w-[20em]"
             />
@@ -204,11 +204,11 @@ const ProjectPage = () => {
         </div>
         {/* End of Project Card */}
 
-        {/* Project 1 */}
+        {/* Project 6 */}
         <div className="bg-surfacePrimary p-[1.3em] pb-[2em] rounded-xl hover:border hover:border-secondaryBrand project-card hover:cursor-pointer w-[90%] md:w-fit ">
           <div>
             <img
-              src={ProjectThree}
+              src={ImgThree}
               alt="Noir Chef Project Image"
               className="w-[20em]"
             />
