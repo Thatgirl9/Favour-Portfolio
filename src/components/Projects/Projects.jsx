@@ -63,7 +63,7 @@ const Projects = () => {
             to="/projectpage"
             className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
           >
-            <span>See portfolio catalog</span>
+            <span>See project catalog</span>
             <span
               ref={animatedElementRef}
               className={` ${
