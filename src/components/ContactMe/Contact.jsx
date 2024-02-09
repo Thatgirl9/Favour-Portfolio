@@ -2,13 +2,59 @@ import { useForm, ValidationError } from "@formspree/react";
 import "./contact.css";
 import Girl from "../../assets/contactme/Cute Avatar.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
+import { useState } from "react";
 
 const ContactMe = () => {
   const [state, handleSubmit] = useForm("xkndjakb");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [nameError, setNameError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [messageError, setMessageError] = useState("");
 
   // if (state.succeeded) {
   //   reset();
   // }
+
+  const handleNameValid = (e) => {
+    const newName = e.target.value;
+
+    // Check if the entered name contains a number or a special character.
+    if (/\d/.test(newName) || /[!@#$%^&*(),.?":{}|<>]/g.test(newName)) {
+      setNameError("Name cannot contain numbers or special characters");
+    } else {
+      setNameError("");
+    }
+    // Update the name state
+    setName(newName);
+  };
+
+  const handleEmailValid = (e) => {
+    const newEmail = e.target.value;
+
+    // Check if the entered email does not contain the @ symbol
+    if (!/@/.test(newEmail)) {
+      setEmailError("Email must contain @ symbol");
+    } else {
+      setEmailError("");
+    }
+    // Update the email state
+    setEmail(newEmail);
+  };
+
+  const handleMessageValid = (e) => {
+    const newMessage = e.target.value;
+
+    // Check if the entered message is less than 10 characters
+    if (newMessage.length < 10) {
+      setMessageError("Message must be at least 10 characters");
+    } else {
+      setMessageError("");
+    }
+    // Update the message state
+    setMessage(newMessage);
+  };
 
   return (
     <section id="contact" className="flex justify-center pb-[4em] lg:pb-[6em]">
@@ -122,11 +168,23 @@ const ContactMe = () => {
             >
               <input
                 type="name"
-                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
+                className={`bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] focus:outline-none ${
+                  nameError
+                    ? "border-red-500 hover:border-red-500"
+                    : "border-transparent hover:border-secondaryBrand"
+                }`}
                 placeholder="Name"
                 name="name"
                 id="name"
+                value={name}
+                onChange={handleNameValid}
               />
+              {nameError && (
+                <p className="text-textSecondary text-sm font-serif">
+                  {nameError}
+                </p>
+              )}
+
               <ValidationError
                 prefix="Name"
                 field="name"
@@ -134,11 +192,24 @@ const ContactMe = () => {
               />
               <input
                 type="email"
-                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
+                className={`bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] focus:outline-none ${
+                  emailError
+                    ? "border-red-500 hover:border-red-500"
+                    : "border-transparent hover:border-secondaryBrand"
+                }`}
                 placeholder="E-mail"
                 name="email"
                 id="email"
+                value={email}
+                onChange={handleEmailValid}
               />
+
+              {emailError && (
+                <p className="text-textSecondary text-sm font-serif">
+                  {emailError}
+                </p>
+              )}
+
               <ValidationError
                 prefix="Email"
                 field="email"
@@ -146,11 +217,24 @@ const ContactMe = () => {
               />
               <textarea
                 type="text"
-                className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none h-[10em]"
+                className={`bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] focus:outline-none h-[10em] ${
+                  messageError
+                    ? "border-red-500 hover:border-red-500"
+                    : "border-transparent hover:border-secondaryBrand"
+                }`}
                 placeholder="Your message"
                 name="message"
                 id="message"
+                value={message}
+                onChange={handleMessageValid}
               ></textarea>
+
+              {messageError && (
+                <p className="text-textSecondary text-sm font-serif">
+                  {messageError}
+                </p>
+              )}
+
               <ValidationError
                 prefix="Message"
                 field="message"
