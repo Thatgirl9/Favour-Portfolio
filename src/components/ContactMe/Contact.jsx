@@ -1,12 +1,14 @@
+import { useForm, ValidationError } from "@formspree/react";
 import "./contact.css";
 import Girl from "../../assets/contactme/Cute Avatar.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 
 const ContactMe = () => {
-  const handleForm = (e) => {
-    e.preventDefault();
-    console.log("Form Submitted");
-  };
+  const [state, handleSubmit] = useForm("xkndjakb");
+
+  // if (state.succeeded) {
+  //   reset();
+  // }
 
   return (
     <section id="contact" className="flex justify-center pb-[4em] lg:pb-[6em]">
@@ -116,29 +118,56 @@ const ContactMe = () => {
             <form
               action=""
               className="flex flex-col gap-[1em]"
-              onSubmit={handleForm}
+              onSubmit={handleSubmit}
             >
               <input
                 type="name"
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
                 placeholder="Name"
+                name="name"
+                id="name"
+              />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
               />
               <input
                 type="email"
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none"
                 placeholder="E-mail"
+                name="email"
+                id="email"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
               <textarea
                 type="text"
                 className="bg-surfaceBackground px-[1em] py-[0.4em] rounded-lg text-textSecondary lg:w-[20em] w-full border-[1.5px] border-transparent hover:border-secondaryBrand focus:outline-none h-[10em]"
                 placeholder="Your message"
+                name="message"
+                id="message"
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
               <button
-                className=" bg-primaryBrand500 rounded-md  hover:bg-gradientPurple py-[12px]  flex items-center justify-center gap-2 text-textPrimary w-[60%] md:w-[15em] lg:w-[65%] mt-[1em]"
+                className={`bg-primaryBrand500 rounded-md  hover:bg-gradientPurple py-[12px]  flex items-center justify-center gap-2 text-textPrimary btn  mt-[1em] ${
+                  state.succeeded
+                    ? "md:w-[8em] font-bold w-[7em]"
+                    : "md:w-[14em] w-[14em]"
+                }`}
                 type="submit"
+                disabled={state.submitting}
               >
-                <span>Send me a message</span>
-                <span>
+                <span> {state.succeeded ? "Sent!" : "Send me a message"}</span>
+                {/* <span>Send me a Message</span> */}
+                <span className={`${state.succeeded ? "hidden" : "block"}`}>
                   <img
                     src={ArrowRight}
                     className="w-[24px] h-[24px]"

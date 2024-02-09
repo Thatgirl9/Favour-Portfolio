@@ -130,3 +130,15 @@ Instagram SVG
         <div className="flex justify-end items-end w-full mt-[-3em] lg:mt-0">
           <img src={SparklesTwo} alt="Sparkles" className="w-[62px] h-[64px]" />
         </div> */}  
+
+
+
+        // const btn = document.querySelector(".btn");
+
+      // return btn.addEventListener("click", () => {
+      //   btn.innerHTML = "Sent!";
+      //   const inputs = document.querySelectorAll("input");
+      //   const textarea = document.querySelector("textarea");
+      //   inputs.forEach((input) => (input.value = ""));
+      //   textarea.value = "";
+      // });
