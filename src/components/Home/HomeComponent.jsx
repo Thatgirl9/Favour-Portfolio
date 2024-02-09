@@ -29,7 +29,7 @@ const Hero = () => {
           // }
         >
           {/* Text */}
-          <div className="text-textPrimary font-sectionTypo flex flex-col animate__animated animate__slideInLeft">
+          <div className="text-textPrimary font-sectionTypo flex flex-col animate__animated animate__slideInLeft transition-all">
             <h1 className="font-textTypo gradient bg-gradient-to-r from-gradientPurple to-gradientGreen bg-clip-text text-transparent text-3xl mb-[1em]">
               Hi, I’m Favour
             </h1>
@@ -86,7 +86,7 @@ const Hero = () => {
           </div>
 
           {/* Img */}
-          <div className="animate__slideInRight animate__animated">
+          <div className="animate__slideInRight animate__animated transition-all">
             <img
               src={HomeBro}
               width="400em"
