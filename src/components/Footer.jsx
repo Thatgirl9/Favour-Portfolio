@@ -29,7 +29,7 @@ const Footer = () => {
   return (
     <footer className="flex lg:justify-center justify-start items-start lg:items-center pb-[2em] px-[1.5em] lg:px-0">
       <main className="text-textSecondary font-sectionTypo text-base flex justify-between flex-col lg:flex-row lg:w-[86%] gap-[1.6em] lg:gap-0">
-        <p className="">Favour Ukonu 2023 @Thatgirl9</p>
+        <p className="">Favour Ukonu 2024 @Thatgirl9</p>
 
         <div className="flex gap-[2.5em]">
           <p>
@@ -56,7 +56,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              X
+              Twitter
             </a>
           </p>
           <button

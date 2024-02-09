@@ -57,7 +57,7 @@ const AboutMe = () => {
               </p>
               <h3 className="font-sectionTypo text-textPrimary font-medium text-xl">
                 I’m a passionate Front-End developer looking for
-                <br className="hidden lg:block"></br> my first opportunity
+                <br className="hidden lg:block"></br> opportunities
               </h3>
               <p className="text-textSecondary font-sectionTypo text-base mt-3">
                 Beyond coding, I am a Technical Writer , a cat lover, who enjoys{" "}
