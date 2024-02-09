@@ -1,7 +1,4 @@
 import "./project.css";
-// import ProjectOne from "../../assets/projects/Placeholder.png";
-// import ProjectTwo from "../../assets/projects/Placeholder 1.png";
-// import ProjectThree from "../../assets/projects/Placeholder 2.png";
 import Tailwind from "../../assets/aboutme/Tailwind.png";
 import React from "../../assets/aboutme/React.png";
 import Js from "../../assets/aboutme/Frame.png";
@@ -272,8 +269,8 @@ const ProjectPage = () => {
               Vipera Pricing UI
             </h2>
             <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-              Pricing UI for a fictional company, Vipera. It offers pricing
-              plans and services.
+              Setting the UI price for Vipera. It provides services and price
+              ranges.
             </p>
           </div>
         </div>
@@ -286,11 +283,7 @@ const ProjectPage = () => {
             onMouseEnter={() => setProjectFour(true)}
             onMouseLeave={() => setProjectFour(false)}
           >
-            <img
-              src={ImgOne}
-              alt="ChatApp Project Image"
-              className="w-[20em]"
-            />
+            <img src={ImgOne} alt="Fylo Project Image" className="w-[20em]" />
 
             {projectFour && (
               <div className="absolute top-[4em] right-1 transform -translate-y-1/2 project-icon z-30 flex flex-col gap-1">
@@ -354,8 +347,10 @@ const ProjectPage = () => {
               Fylo Landing Page
             </h2>
             <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-              Fylo stores all your file in one secure location, accessible
-              anywhere.
+              {/* Fylo stores all your file in one secure location, accessible
+              anywhere. */}
+              Keeps all of your data in one safe location that you can access
+              from anywhere.
             </p>
           </div>
         </div>
@@ -370,7 +365,7 @@ const ProjectPage = () => {
           >
             <img
               src={ImgTwo}
-              alt="Podcast Project Image"
+              alt="City Skyline Project Image"
               className="w-[20em]"
             />
             {projectFive && (
@@ -425,8 +420,8 @@ const ProjectPage = () => {
               City Skyline
             </h2>
             <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-              City view with a beautiful skyline and a sunset that changes to a
-              night view.
+              View of the city with a stunning skyline and a sunset that
+              transitions into the night.
             </p>
           </div>
         </div>
@@ -441,7 +436,7 @@ const ProjectPage = () => {
           >
             <img
               src={ImgThree}
-              alt="Noir Chef Project Image"
+              alt="Volunteer Sign Up Project Image"
               className="w-[20em]"
             />
             {projectSix && (
@@ -496,7 +491,7 @@ const ProjectPage = () => {
               Volunteer Sign Up Page
             </h2>
             <p className="w-[33ch] md:w-[35ch] text-textPrimary mt-3 text-base">
-              A Sign Up page for volunteers to register for an event.
+              A page where volunteers can register for an event.
             </p>
           </div>
         </div>

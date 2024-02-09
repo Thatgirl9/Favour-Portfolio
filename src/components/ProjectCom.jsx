@@ -1,6 +1,4 @@
 import { useState } from "react";
-// import ProjectOne from "../assets/"
-
 import ProjectOne from "../assets/projects/Placeholder.png";
 import ProjectTwo from "../assets/projects/Placeholder 1.png";
 import ProjectThree from "../assets/projects/Placeholder 2.png";
