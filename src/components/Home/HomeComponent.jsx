@@ -45,13 +45,14 @@ const Hero = () => {
             <p className="text-textSecondary text-base mb-[1.8em]">
               My area of expertise is creating cutting-edge online{" "}
               <br className="hidden lg:block"></br>
-              applications with tools like JavaScript, React.js, and Vue.js.
+              applications with tools like JavaScript,TypeScript, React.js, and
+              Vue.js.
             </p>
 
             <div className="text-textPrimary flex gap-4 ">
               <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary">
                 <Link
-                  to="https://drive.google.com/file/d/1z07UOgFaPLLSbPypHT3W6fMI9zfKoA2A/view?usp=drive_link"
+                  to="https://drive.google.com/file/d/1Zit_xGDT-GkoAVNIyhu7iichbv2T4a-O/view?usp=sharing"
                   className="flex items-center justify-center gap-1 py-[12px] px-[20px]  sm:py-[12px] sm:px-[24px]"
                   target="_blank"
                   rel="noreferrer"
