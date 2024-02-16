@@ -41,8 +41,12 @@ const NavBar = () => {
         {/* Links */}
         {/* <div className=" block "> */}
         <div
-          className={`links h-0 overflow-hidden transition-all md:h-auto bg-surfacePrimary md:bg-transparent absolute top-[3.8em] right-0 md:relative md:top-0 md:right-0 md:border-none  md:rounded-none duration-150 ease-in-out z-50
-          ${open ? "h-[100vh] md:w-fit w-[60%] overflow-auto" : "h-0 "}`}
+          className={`links h-0 overflow-hidden transition-all md:h-auto bg-surfacePrimary md:bg-transparent absolute top-[3.8em] right-0 md:relative md:top-0 md:right-0 md:border-none md:rounded-none ease-in-out z-50
+          ${
+            open
+              ? "h-[100vh] md:w-fit w-[60%]  right-0 "
+              : "right-[-10em] h-0 w-0"
+          }`}
         >
           <ul
             className={`flex md:flex-row md:gap-6 text-textSecondary font-sectionTypo font-normal gap-[1.7em] justify-end md:justify-normal md:items-center items-end flex-col  px-5 py-8 mx-1 md:mx-0 md:p-0 border-b-2 border-t-0 border-surfaceSecondary md:border-none
