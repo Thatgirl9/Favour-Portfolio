@@ -57,7 +57,10 @@ const ContactMe = () => {
   };
 
   return (
-    <section id="contact" className="flex justify-center pb-[4em] lg:pb-[6em]">
+    <section
+      id="contact"
+      className="flex justify-center pb-[4em] lg:pb-[6em] scroll-m-20"
+    >
       <main className="bg-surfacePrimary lg:w-[93%] w-full  rounded-none lg:rounded-xl px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
         <div className="flex lg:flex-row flex-col lg:gap-[6em] gap-[4em]">
           {/* First Div with Image */}

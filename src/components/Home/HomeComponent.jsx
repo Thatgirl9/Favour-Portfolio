@@ -113,7 +113,7 @@ const Hero = () => {
           width="121.069px"
           height="33.707px"
           alt="Arrow Illustration"
-          className="absolute -bottom-[4em] md:bottom-0 lg:right-[26em]  right-[4em] z-50 left-[8em] hidden md:block lg:hidden  animate__shakeY animate__animated animate__delay-4s"
+          className="absolute -bottom-[4em] md:bottom-0   right-[4em] z-50 left-[8em] hidden md:block lg:hidden  animate__shakeY animate__animated animate__delay-4s"
         />
       </div>
       <Outlet></Outlet>

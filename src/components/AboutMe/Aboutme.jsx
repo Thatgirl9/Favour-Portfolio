@@ -12,7 +12,10 @@ import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 
 const AboutMe = () => {
   return (
-    <section className="flex justify-center pb-[4em] lg:pb-[6em]" id="about">
+    <section
+      className="flex justify-center pb-[4em] lg:pb-[6em] scroll-m-16"
+      id="about"
+    >
       <div className="bg-surfacePrimary lg:w-[93%] w-full rounded-none lg:rounded-xl px-[1.5em] py-[3em] md:p-[3em] md:pb-[4.7em] flex justify-center items-center">
         <div className="flex justify-center  lg:gap-[10em] gap-[2em] flex-col lg:flex-row">
           {/* IMG */}

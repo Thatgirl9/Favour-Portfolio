@@ -32,7 +32,7 @@ const Projects = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center pb-[3em]"
+      className="flex flex-col justify-center items-center pb-[3em] scroll-m-20"
       id="projects"
     >
       <div className="text-center flex flex-col gap-2 mb-[2em]">

@@ -58,6 +58,16 @@ const NavBar = () => {
                 >
                   {link.name}
                 </a>
+                {/* <Link
+                  to={link.link}
+                  className="hover:text-textPrimary hover:font-semibold transition-all ease-in-out"
+                  {...(link.newtab
+                    ? { target: "_blank" }
+                    : { target: "_self" })}
+                  rel="noreferrer"
+                >
+                  {link.name}
+                </Link> */}
               </li>
             ))}
           </ul>
