@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 
 const Portfolio = () => {
   return (
-    <div className="bg-surfaceBackground">
+    <div className="bg-surfaceBackground w-full overflow-x-hidden">
       <HomeComponent />
       <AboutMe />
       <Projects />

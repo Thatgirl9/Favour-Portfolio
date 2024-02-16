@@ -4,10 +4,6 @@ import "./Home/home.css";
 // import PropTypes from "prop-types";
 
 const NavBar = () => {
-  // NavBar.propTypes = {
-  //   toggleNav: PropTypes.func.isRequired,
-  // };
-
   let Links = [
     { name: "Home", link: "/", newtab: false },
     { name: "About", link: "#about", newtab: false },
@@ -24,7 +20,7 @@ const NavBar = () => {
       `}
     >
       {/* second header */}
-      <nav className="lg:flex lg:justify-between lg:items-center">
+      <nav className="md:flex md:justify-between md:items-center">
         {/* Logo Hamburger */}
         <div className="flex items-center justify-between">
           <h2 className="font-textTypo text-textPrimary text-2xl">
@@ -34,7 +30,7 @@ const NavBar = () => {
           {/* Hamburger */}
           <button
             onClick={() => setOpen(!open)}
-            className="w-6 h-6 text-3xl text-textPrimary lg:hidden "
+            className="w-6 h-6 text-3xl text-textPrimary md:hidden "
           >
             <ion-icon
               name={open ? "close" : "menu"}
@@ -44,41 +40,29 @@ const NavBar = () => {
         </div>
 
         {/* Links */}
-        <div className=" block ">
-          {/* {open && (
-            <div className="fixed inset-0 bg-opacity-75 blur-md z-50"></div>
-          )} */}
-          {/* <div className={`border-2 w-[40%] `}></div> */}
-          <div
-            className={`links h-0 overflow-hidden transition-all lg:h-auto bg-surfacePrimary lg:bg-transparent absolute top-[3.8em] right-0 lg:relative lg:top-0 lg:right-0 lg:border-none  lg:rounded-none duration-150 ease-in-out z-50
+        {/* <div className=" block "> */}
+        <div
+          className={`links h-0 overflow-hidden transition-all md:h-auto bg-surfacePrimary md:bg-transparent absolute top-[3.8em] right-0 md:relative md:top-0 md:right-0 md:border-none  md:rounded-none duration-150 ease-in-out z-50
           ${open ? "h-[100vh] md:w-[50%] w-[60%] overflow-auto" : "h-0 "}`}
-          >
-            <ul className="flex lg:flex-row lg:gap-6 text-textSecondary font-sectionTypo font-normal gap-[1.7em] justify-end lg:justify-normal lg:items-center items-end flex-col  px-5 py-8 mx-1 lg:mx-0 lg:p-0 border-b-2 border-t-0 border-surfaceSecondary lg:border-none">
-              {Links.map((link) => (
-                <li key={link.name}>
-                  {/* <Link
-                    to={link.link}
-                    // target="_blank"
-                    // rel="noreferrer"
-                    className="hover:text-textPrimary hover:font-semibold transition-all ease-in-out"
-                  >
-                    {link.name}
-                  </Link> */}
-                  <a
-                    href={link.link}
-                    className="hover:text-textPrimary hover:font-semibold transition-all ease-in-out"
-                    {...(link.newtab
-                      ? { target: "_blank" }
-                      : { target: "_self" })}
-                    rel="noreferrer"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        >
+          <ul className="flex md:flex-row md:gap-6 text-textSecondary font-sectionTypo font-normal gap-[1.7em] justify-end md:justify-normal md:items-center items-end flex-col  px-5 py-8 mx-1 md:mx-0 md:p-0 border-b-2 border-t-0 border-surfaceSecondary md:border-none ">
+            {Links.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.link}
+                  className="hover:text-textPrimary hover:font-semibold transition-all ease-in-out"
+                  {...(link.newtab
+                    ? { target: "_blank" }
+                    : { target: "_self" })}
+                  rel="noreferrer"
+                >
+                  {link.name}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
+        {/* </div> */}
       </nav>
     </header>
   );
