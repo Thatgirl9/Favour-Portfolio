@@ -45,7 +45,7 @@ const NavBar = () => {
           ${
             open
               ? "h-[100vh] md:w-fit w-[60%]  right-0 "
-              : "right-[-10em] h-0 w-0"
+              : "right-[-10em] h-0 w-0 md:w-fit"
           }`}
         >
           <ul
