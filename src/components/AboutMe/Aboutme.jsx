@@ -85,7 +85,7 @@ const AboutMe = () => {
 
               <button className=" bg-primaryBrand500 rounded-md hover:bg-gradientPurple text-textPrimary w-[10em] mt-4">
                 <Link
-                  to="https://drive.google.com/file/d/1Zit_xGDT-GkoAVNIyhu7iichbv2T4a-O/view?usp=sharing"
+                  to="https://drive.google.com/file/d/1kJl_GaWK4jqV1Z4dRtKHd2aqFBOlOv3q/view?usp=sharing"
                   className="flex items-center justify-center gap-1 py-[11px] px-[20px] sm:py-[12px] sm:px-[24px] "
                   target="_blank"
                   rel="noreferrer"
