@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
 import { useRef, useEffect, useState } from "react";
 import "./project.css";
 import SparklesOne from "../../assets/projects/Graphic (1).png";
 import SparklesTwo from "../../assets/projects/Graphic (2).png";
-import ArrowRight from "../../assets/general/ArrowRight.png";
+import Github from "../../assets/aboutme/logo github.png";
 
 import "animate.css";
 import ProjectComponent from "../ProjectCom";
-// import AOS from "aos";
 
 const Projects = () => {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -17,9 +15,7 @@ const Projects = () => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          // if (entry.isIntersecting) {
-          //   setIsIntersecting(true);
-          // }
+        
           setIsIntersecting(entry.isIntersecting);
         });
       },
@@ -48,9 +44,7 @@ const Projects = () => {
       <div className="flex flex-col justify-center items-center pt-[5em] pb-[3em] relative">
         {/* Sparkles */}
 
-        {/* <div className="justify-start items-start flex w-full lg:pb-[2em] pb-0">
-          <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
-        </div> */}
+       
 
         <div className="absolute left-[-1em] md:left-[-1.5em] md:top-0 top-[2.3em]">
           <img src={SparklesOne} alt="Sparkles" className="w-[62px] h-[64px]" />
@@ -59,11 +53,14 @@ const Projects = () => {
         <ProjectComponent />
 
         <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary text-textPrimary">
-          <Link
-            to="/projectpage"
-            className="py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px] flex items-center justify-center gap-1"
-          >
-            <span>See project catalog</span>
+        
+             <a
+              className="flex items-center gap-1  justify-center py-[12px] px-[15px]  sm:py-[12px] sm:px-[24px]"
+              href="https://github.com/Thatgirl9"
+              target="_blank"
+              rel="noreferrer"
+            >
+            <span>See more on Github</span>
             <span
               ref={animatedElementRef}
               className={` ${
@@ -71,12 +68,12 @@ const Projects = () => {
               } animate__animated  animate__repeat-2 inline-block  transition-all`}
             >
               <img
-                src={ArrowRight}
-                className="w-[24px] h-[24px]"
-                alt="Arrow Right Icon"
-              />
+                  src={Github}
+                  alt="Github Logo"
+                  className="w-[24px] h-[24px]"
+                />
             </span>
-          </Link>
+            </a>
         </button>
 
         {/* Sparkles Two */}

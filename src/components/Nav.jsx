@@ -8,7 +8,7 @@ const NavBar = () => {
     { name: "About", link: "#about", newtab: false },
     { name: "Projects", link: "#projects", newtab: false },
     { name: "Contact", link: "#contact", newtab: false },
-    { name: "Blog", link: "https://thatgirl.hashnode.dev/", newtab: true },
+    { name: "Blog", link: "https://dev.to/thatgirl", newtab: true },
   ];
 
   let [open, setOpen] = useState(false);

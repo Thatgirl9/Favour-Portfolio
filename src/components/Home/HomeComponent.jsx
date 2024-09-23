@@ -6,15 +6,8 @@ import CvLogo from "../../assets/homehero/ReadCvLogo.png";
 import ArrowRight from "../../assets/general/ArrowRight.png";
 import ArrowImg from "../../assets/homehero/Graphic.png";
 import "animate.css";
-// import { useState } from "react";
 
 const Hero = () => {
-  // const [isBlurred, setBlurred] = useState(false);
-
-  // const toggleBlurred = (value) => {
-  //   // setBlurred((prevBlurred) => !prevBlurred);
-  //   setBlurred(value);
-  // };
 
   return (
     <section className="bg-surfaceBackground">
@@ -22,11 +15,7 @@ const Hero = () => {
       <div className="flex justify-center items-center  flex-col relative md:pb-[7em] pb-[3em] pt-[4em]">
         <div
           className={`z-20 flex justify-center items-center mt-[5em] lg:flex-row flex-col-reverse gap-[3em] lg:gap-[14em] w-[87%] `}
-          // ${
-          //   open
-          //     ? "blur-sm h-screen md:w[50%] w-[60%] lg:hidden block"
-          //     : "blur-none h-0"
-          // }
+        
         >
           {/* Text */}
           <div className="text-textPrimary font-sectionTypo flex flex-col animate__animated animate__slideInLeft transition-all">
@@ -36,23 +25,18 @@ const Hero = () => {
             <h3 className="text-xl font-medium mb-[0.5em]">
               Front-End developer and Web developer
             </h3>
-            {/* <p className="text-textSecondary text-base mb-[1.8em]">
-              I specialize in building innovative web applications using
-              <br className="hidden lg:block"></br> technologies such as
-              JavaScript, React.js, and Vue.js.
-            </p> */}
+          
 
             <p className="text-textSecondary text-base mb-[1.8em]">
               My area of expertise is creating cutting-edge online{" "}
               <br className="hidden lg:block"></br>
-              applications with tools like JavaScript,TypeScript, React.js, and
-              Vue.js.
+              applications with tools like JavaScript,TypeScript, Next.js and React.js.
             </p>
 
             <div className="text-textPrimary flex gap-4 ">
               <button className=" bg-surfaceSecondary rounded-md hover:bg-surfaceTertiary">
                 <Link
-                  to="https://drive.google.com/file/d/14q-890aCZHjSgvq_FcSkBwaMfqux6eik/view"
+                  to="https://drive.google.com/file/d/14q-890aCZHjSgvq_FcSkBwaMfqux6eik/view?usp=sharing"
                   className="flex items-center justify-center gap-1 py-[12px] px-[20px]  sm:py-[12px] sm:px-[24px]"
                   target="_blank"
                   rel="noreferrer"
